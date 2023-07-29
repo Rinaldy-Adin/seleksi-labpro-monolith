@@ -1,0 +1,201 @@
+/* CSS for the navbar */
+nav {
+    background-color: #0056b3;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #0072cc;
+    border-radius: 5px;
+}
+
+.pagination {
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+thead th {
+    padding: 10px;
+}
+
+tbody td {
+    padding: 10px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}
+
+tbody td a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+tbody td a:hover {
+    text-decoration: underline;
+}
+
+.centered-cell {
+    text-align: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.step-links {
+    display: flex;
+    align-items: center;
+}
+
+.step-links a {
+    margin: 0 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 3px;
+}
+
+.step-links a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.step-links .current {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* CSS for the item details */
+.item-details {
+    max-width: 300px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.item-details h2 {
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.item-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.item-details li {
+    margin-bottom: 10px;
+}
+
+.item-details li strong {
+    margin-right: 5px;
+}
+
+.item-details form {
+    margin-top: 20px;
+}
+
+.item-details label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.item-details input[type='number'] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.item-details button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.item-details button:hover {
+    background-color: #0056b3;
+}
+
+.buy-link {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buy-link:hover {
+    background-color: #0056b3;
+}
+
+.buy-link:focus {
+    outline: none;
+}
+
+div.error-msg {
+    display: flex;
+    justify-content: center;
+}
+
+p.error-msg {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f44336; /* Red background color for error messages */
+    color: #fff; /* White text color for better contrast */
+    border-radius: 5px; /* Rounded corners for a visually appealing effect */
+}

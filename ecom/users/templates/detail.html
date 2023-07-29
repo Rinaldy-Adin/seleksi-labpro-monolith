@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Catalog{% endblock %}
+
+{% block content %}
+{% if item_detail %}
+<div class="item-details">
+    <h2>Item Details</h2>
+    <ul>
+        <li><strong>Name:</strong> {{ item_detail.nama }}</li>
+        <li><strong>Price:</strong> {{ item_detail.harga }}</li>
+        <li><strong>Stock:</strong> {{ item_detail.stok }}</li>
+        <li><strong>Code:</strong> {{ item_detail.kode }}</li>
+    </ul>
+    <a class="buy-link" href="{% url 'users:buy' item_detail.id %}">Buy</a>
+</div>
+{% endif %}
+{% endblock %}

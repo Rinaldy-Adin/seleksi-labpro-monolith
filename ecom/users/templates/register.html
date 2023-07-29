@@ -1,0 +1,38 @@
+<!DOCTYPE html>{% load static %}
+<html lang="{{ LANGUAGE_CODE }}">
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" href="{% static 'users/auth.css' %}" />
+    </head>
+
+    <body>
+        <form method="post">
+            {% csrf_token %} {% csrf_token %}
+            <fieldset>
+                <h1>Register</h1>
+                <label for="username">username</label>
+                <input required type="text" id="username" name="username" />
+                <label for="email">email</label>
+                <input required type="email" id="email" name="email" />
+                <label for="first_name">first name</label>
+                <input required type="text" id="first_name" name="first_name" />
+                <label for="last_name">last_name</label>
+                <input required type="text" id="last_name" name="last_name" />
+                <label for="password">password</label>
+                <input required type="password" id="password" name="password" />
+            </fieldset>
+            <input type="submit" value="Submit" />
+        </form>
+        <p class="text-center">
+            Already have an account?
+            <a href="{% url 'users:login'%}">Login Here</a>
+        </p>
+        {% if error_messages %}
+        <div class="error-msg">
+            {% for error in error_messages %}
+            <p class="error-msg">{{ error }}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </body>
+</html>

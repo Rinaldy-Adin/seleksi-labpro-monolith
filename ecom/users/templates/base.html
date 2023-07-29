@@ -1,0 +1,26 @@
+<!-- base.html -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{% block title %}My Website{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'users/style.css' %}" />
+</head>
+
+<body>
+    <nav>
+        <h3>{{ active_navbar }}</h3>
+        <ul>
+            <li><a href="{% url 'users:catalog' %}">Catalog</a></li>
+            <li><a href="{% url 'users:history' %}">History</a></li>
+            <li><a href="{% url 'users:logout' %}">Logout</a></li>
+            <li>User: {{ username }}</li>
+        </ul>
+    </nav>
+
+    <div>{% block content %}{% endblock %}</div>
+</body>
+
+</html>
