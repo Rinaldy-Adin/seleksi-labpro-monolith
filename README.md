@@ -30,7 +30,7 @@
 
 6. Pastikan `single-service` sudah jalan sebelum menjalankan program ini
 
-### Database Migration & Seeding (PostgreSQL Local)
+### Database Migration & Seeding (Local)
 
 1. Buat database baru pada postgres untuk program ini
 
@@ -45,6 +45,11 @@
     python manage.py loaddata fixtures/user_fixture.json
     python manage.py loaddata fixtures/history_fixture.json
     ```
+
+### Run program
+
+1. Jalankan program
+   `python manage.py runserver`
 
 ## Design Pattern yang digunakan
 
