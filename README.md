@@ -101,15 +101,15 @@ Requests==2.31.0
 
 ## Endpoints
 
-**login :** Halaman login
+**login/ :** Halaman login
 <br>
-**logout :** Endpoint logout
+**logout/ :** Endpoint logout
 <br>
-**register :** Halaman register (membuat akun baru)
+**register/ :** Halaman register (membuat akun baru)
 <br>
-**catalog :** Halaman katalog barang
+**catalog/ :** Halaman katalog barang
 <br>
-**history :** Halaman riwayat pembelian
+**history/ :** Halaman riwayat pembelian
 <br>
 **detail/:id :** Halaman detail barang
 <br>
