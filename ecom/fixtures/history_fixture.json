@@ -1,0 +1,1 @@
+[{"model": "users.history", "pk": 1, "fields": {"username": 1, "item_name": "Item 1", "quantity": 2, "total": 200}}]

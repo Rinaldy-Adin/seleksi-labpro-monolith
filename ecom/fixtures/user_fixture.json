@@ -1,0 +1,1 @@
+[{"model": "users.user", "pk": 1, "fields": {"username": "johndoe", "first_name": "john", "last_name": "doe", "password": "JDJiJDEyJFgudFpYYjVWc2tkbHRicnpDOEhzTi5lZ2ZHNEM5MDNBU2J0cDdsRFBFVS96ME50endPMjVX", "email": "johndoe@johndoe.com"}}]

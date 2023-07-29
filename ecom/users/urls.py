@@ -3,6 +3,7 @@ from django.urls import path
 from . import views
 
 app_name = "users"
+handler404 = "users.views.view_404"
 urlpatterns = [
     path("login/", views.LoginView.as_view(), name="login"),
     path("logout/", views.LogoutView, name="logout"),

@@ -17,6 +17,10 @@ from .models import User, History
 from .forms import LoginForm, RegisterForm
 
 
+def view_404(request, exeption=None):
+    return redirect("users:catalog")
+
+
 class LoginView(TemplateView):
     def get(
         self, request: http.HttpRequest, *args: Any, **kwargs: Any

@@ -8,6 +8,44 @@
 
 ## Cara menjalankan
 
+### Setup
+
+1. Clone repository
+   `git clone https://github.com/Rinaldy-Adin/seleksi-labpro-monolith.git`
+
+2. Masuk ke dalam folder program
+   `cd seleksi-labpro-single-monolith`
+
+3. Buat virtual environment dan masuk ke dalam virtual environment tersebut
+
+    ```
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+
+4. Instal dependensi Python menggunakan pip:
+   `pip install -r requirements.txt`
+
+5. Copy `.example.env` menjadi `.env` dan set environment variabel yang sesuai
+
+6. Pastikan `single-service` sudah jalan sebelum menjalankan program ini
+
+### Database Migration & Seeding (PostgreSQL Local)
+
+1. Buat database baru pada postgres untuk program ini
+
+2. Masuk ke dalam folder `ecom`
+   `cd ecom`
+
+3. Inisialisasi/migrate model yang ada ke database yang telah dibuat
+   `python manage.py migrate`
+
+4. Jalankan seeder untuk mengisi database dengan data inisial
+    ```
+    python manage.py loaddata fixtures/user_fixture.json
+    python manage.py loaddata fixtures/history_fixture.json
+    ```
+
 ## Design Pattern yang digunakan
 
 ### 1. Chain of Responsibility
