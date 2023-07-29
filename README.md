@@ -2,8 +2,8 @@
 
 ## Identitas diri
 
-_nama:_ Rinaldy Adin
-_NIM:_ 13521134
+**nama:** Rinaldy Adin
+**NIM:** 13521134
 
 ## Cara menjalankan
 
@@ -84,9 +84,9 @@ Pada implementasi `HistoryListView` di atas, yang merupakan subclass dari `ListV
 
 ## Technology Stack
 
-_Bahasa:_ Python (3.10)
-_Framework_: Django (4.2)
-_Package Lainnya:_
+**Bahasa:** Python (3.10)
+**Framework**: Django (4.2)
+**Package Lainnya:**
 
 ```
 # requirements.txt
@@ -94,21 +94,21 @@ Django==4.2.3
 PyJWT==2.8.0
 PyJWT==2.8.0
 python-dotenv==1.0.0
-python_bcrypt==0.3.2
+python__bcrypt==0.3.2
 Requests==2.31.0
 ```
 
 ## Endpoints
 
-_login :_ Halaman login
-_logout :_ Endpoint logout
-_register :_ Halaman register (membuat akun baru)
-_catalog :_ Halaman katalog barang
-_history :_ Halaman riwayat pembelian
-_detail/:id :_ Halaman detail barang
-_buy/:id :_ Halaman beli barang
-_admin/ :_ Halaman admin Django (bawaan Django)
+**login :** Halaman login
+**logout :** Endpoint logout
+**register :** Halaman register (membuat akun baru)
+**catalog :** Halaman katalog barang
+**history :** Halaman riwayat pembelian
+**detail/:id :** Halaman detail barang
+**buy/:id :** Halaman beli barang
+**admin/ :** Halaman admin Django (bawaan Django)
 
 ## Bonus
 
--
+-   Tidak ada pada monolith
