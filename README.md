@@ -2,7 +2,8 @@
 
 ## Identitas diri
 
-**nama:** Rinaldy Adin
+**Nama:** Rinaldy Adin
+
 **NIM:** 13521134
 
 ## Cara menjalankan
@@ -101,12 +102,19 @@ Requests==2.31.0
 ## Endpoints
 
 **login :** Halaman login
+
 **logout :** Endpoint logout
+
 **register :** Halaman register (membuat akun baru)
+
 **catalog :** Halaman katalog barang
+
 **history :** Halaman riwayat pembelian
+
 **detail/:id :** Halaman detail barang
+
 **buy/:id :** Halaman beli barang
+
 **admin/ :** Halaman admin Django (bawaan Django)
 
 ## Bonus
